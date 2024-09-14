@@ -1,0 +1,335 @@
+/* Estilos globales */
+
+
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    background-image: url('/images/fondo.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 30px 0; /* Más relleno vertical */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    width: 100%;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+/* Sección Reloj */
+.reloj {
+    padding: 20px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #BDE8CA;
+}
+
+/* Sección principal */
+.principal {
+    padding: 50px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Carrusel */
+.carousel {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel h2 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.carousel p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 600px;
+    height: 200px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+#slide5:checked ~ .slides {
+    transform: translateX(-400%);
+}
+
+#slide6:checked ~ .slides {
+    transform: translateX(-500%);
+}
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"],
+#slide4:checked ~ .navigation label[for="slide4"],
+#slide5:checked ~ .navigation label[for="slide5"],
+#slide6:checked ~ .navigation label[for="slide6"] {
+    background-color: #717171;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Navegación del carrusel */
+.nav-button {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #E0E5B6;
+}
+
+/* Texto principal */
+.texto {
+    font-family: 'Lora', serif;
+    font-size: 21px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.2;
+    color: #f4f4f4;
+    margin-top: 20px;
+}
+
+.texto h1 {
+    font-size: 2.5rem;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección empresas */
+.empresas {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding: 20px;
+}
+
+.empresas img {
+    width: 300px;
+    height: 200px;
+}
+
+/* Estilos para estudios y labores */
+.estudios  {
+    font-family: 'Lora', serif;
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
+    padding: 30px;
+    
+    margin: 30px 0; /* Sin margen lateral, solo superior e inferior */
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+   
+}
+.labores{
+    font-family: 'Lora', serif;
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    padding: 40px;   
+    width: 109cap%; /* Ocupa todo el ancho del contenedor padre */
+   
+
+}
+
+/* Título dentro de estudios y labores */
+.estudios h3{
+    font-size: 2rem;
+    color: #BDE8CA; /* Color suave y elegante */    
+    border-bottom: 2px solid #BDE8CA; /* Línea bajo el título */   
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */ 
+    text-align: center;
+    margin: auto;
+  
+}
+.labores h3 {
+    font-size: 2rem;
+    color: #BDE8CA; /* Color suave y elegante */    
+    border-bottom: 2px solid #BDE8CA; /* Línea bajo el título */   
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */ 
+    text-align: center;
+  
+}
+
+/* Listas dentro de estudios y labores */
+.estudios ul, .labores ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.estudios li, .labores li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Elementos dentro de la lista */
+.estudios li::before, .labores li::before {
+    content: '•';
+    color: #BDE8CA;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Enlaces dentro de estudios y labores */
+.estudios a, .labores a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.estudios a:hover, .labores a:hover {
+    color: #BDE8CA; /* Cambio de color al pasar el cursor */
+}
+
+
+
+/* Sección de contacto */
+.contact {
+    padding: 20px;
+    color: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact a:hover {
+    color: #BDE8CA;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media all and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .social {
+        margin-top: 10px;
+    }
+
+    .empresas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .empresas img {
+        margin-bottom: 20px;
+        width: 100%; /* Las imágenes ahora cubren el 100% del contenedor */
+    }
+
+    .estudios, .labores {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+

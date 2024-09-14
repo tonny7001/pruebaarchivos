@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMosquera - Desarrollador de Software</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="javascript/Script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Reloj funcional -->
+        <section id="reloj" class="reloj">
+            <div id="clock"></div>
+        </section>
+        <h1>JMosquera</h1>
+        <p>Desarrollador de Software</p>
+        <div id="clock"></div> <!-- Reloj -->
+    </header>
+
+    <nav>
+        <a href="#perfil"><i class="fa-solid fa-user"></i> Perfil</a>
+        <a href="#estudios"><i class="fa-solid fa-graduation-cap"></i> Estudios</a>
+        <a href="#labores"><i class="fa-solid fa-building"></i> Experiencia Laboral</a>
+        <a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+        <div class="social">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </nav>
+
+    <section class="principal">
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <input type="radio" id="slide1" name="carousel" checked>
+            <input type="radio" id="slide2" name="carousel">
+            <input type="radio" id="slide3" name="carousel">
+            <input type="radio" id="slide4" name="carousel">
+            <input type="radio" id="slide5" name="carousel">
+            <input type="radio" id="slide6" name="carousel">
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/java.jpg" alt="java">
+                </div>
+                <div class="slide">
+                    <img src="images/python.jpg" alt="python">
+                </div>
+                <div class="slide">
+                    <img src="images/php.jpg" alt="php">
+                </div>
+                <div class="slide">
+                    <img src="images/html.jpg" alt="html">
+                </div>
+                <div class="slide">
+                    <img src="images/MySQL.jpg" alt="MySQL">
+                </div>
+                <div class="slide">
+                    <img src="images/mantenimiento.jpg" alt="mantenimiento">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label for="slide1" class="nav-button"></label>
+                <label for="slide2" class="nav-button"></label>
+                <label for="slide3" class="nav-button"></label>
+                <label for="slide4" class="nav-button"></label>
+                <label for="slide5" class="nav-button"></label>
+                <label for="slide6" class="nav-button"></label>
+            </div>
+        </div>
+
+        <div class="texto">
+            <h1>JMosquera</h1>
+            <p>Programador intermedio de lenguajes de programación como JAVA, PYTHON. Manejo de bases de datos y
+                herramientas ofimáticas. Manejo de Diseño web: CSS, HTML. Manejo de PHP. Curso especial de mantenimiento
+                de computadores del SENA. Inglés básico.</p>
+        </div>
+
+        <!-- Sección Estudios -->
+        <div id="estudios" class="estudios">
+            <h3>Estudios</h3>
+            <ul>
+                <li>Diplomado en Programación en Java y PHP</li>
+                <li>Curso especial en Mantenimiento y reparación de computadores</li>
+                <li>Técnico laboral en análisis y desarrollo de software</li>
+                <li>Curso de Python</li>
+                <li>Curso de bases de datos</li>
+                <li>Curso de diseño web CSS y JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia Laboral -->
+    <div id="labores" class="labores">
+        <h3>Experiencia laboral</h3>
+    </div>
+    <section class="empresas">
+        <div class="empresa">
+            <h3>Rascacielos Inmobiliaria</h3>
+            <img src="/images/raskacielos.png" alt="Rascacielos" class="imagenes">
+            <p>
+                Cargo: Mensajero<br>
+                Gerente: Gloria Eby Duque Vargas<br>
+                Teléfono: 3207271204<br>
+                Tiempo laborado: 3 años, de noviembre de 2014 a enero de 2017
+            </p>
+        </div>
+
+        <div class="empresa">
+            <h3>LINARQ S.A.S</h3>
+            <img src="/images/linarq.jpg" alt="linarq" class="imagenes">
+            <p>
+                Cargo: Mensajero Auxiliar de almacén<br>
+                Representante legal: Diego Alberto Rayo Morales.<br>
+                Teléfono: 3216364508<br>
+                Tiempo laborado: 5 años, de enero del 2017 a octubre 2022
+            </p>
+        </div>
+
+        <div class="empresa">
+            <h3>Vías y Explanaciones</h3>
+            <img src="/images/vias y explanaciones.jpg" alt="Vías y Explanaciones" class="imagenes">
+            <p>
+                Cargo: Mensajero almacenista<br>
+                Jefe inmediato: Nelson de Jesús Patiño.<br>
+                Teléfono: 3147628575<br>
+                Tiempo laborado: diciembre 16 de 2022 a junio 4 2024
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact">
+        <h3>Contacto</h3>
+        <a href="https://mail.google.com/">Envíame un correo</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JMosquera. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
